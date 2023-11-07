@@ -41,6 +41,9 @@ p{
 	padding: 3em;
 	text-align: center;
 }
+.main-text{
+	padding: 3em;
+}
 a {
 	background-color: blanchedalmond;
 	border-radius: 0.5em;
@@ -61,7 +64,7 @@ input[type=text], input[type=Email] {
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
-  border: none;
+  border: 3px solid;
   background: #f1f1f1;
 }
 
@@ -151,9 +154,20 @@ hr {
 h4{
 	text-align: center;
 }
-
-.seminarier-container{
-	display:flex;
+.seminarier-container {
+	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	padding: 0 3em 1em;
+}
+
+.seminarier-item {
+	width: calc(33.33% - 10px);
+	box-sizing: border-box;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	background-color: #f9f9f9;
+}
+body {
+    overflow-x: hidden;
 }
