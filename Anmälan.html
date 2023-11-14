@@ -1,64 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="utf -8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title> Bättre webb</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bättre webb</title>
   <link rel="stylesheet" href="index.css">
 
 </head>
 
 <body>
   <div class="container">
-    <a href="./index.html"> Start</a>
-    <a href="Anmälan.html"> Anmälan</a>
-    <a href="Seminarier.html"> Seminarier</a>
+    <a href="./index.html">Start</a>
+    <a href="Anmälan.html">Anmälan</a>
+    <a href="Seminarier.html">Seminarier</a>
   </div>
-  <h1> Här bokar du biljett till konferansen </h1>
+  <h1>Här bokar du biljett till konferansen</h1>
 
-  <h2> Biljettpris: Om du bokar dagspass 50 kr, Om du bokar alla tre dagar 99 kr. </h2>
+  <h2>Biljettpris: Om du bokar dagspass 50 kr, Om du bokar alla tre dagar 99 kr.</h2>
   <div class="row">
     <div class="col-75">
-
+  
     </div>
+    <div class="container-anmälan">
+      <form action="action_page.php" method="get">
+        <label><b>Välj dagar</b></label><br>
+<input type="checkbox" id="dag20" name="days[]" value="dag20">
+<label for="dag20">20 Oktober</label><br>
 
+<input type="checkbox" id="dag21" name="days[]" value="dag21">
+<label for="dag21">21 Oktober</label><br>
 
-    <div class="container">
-      <form action="action_page.php">
+<input type="checkbox" id="dag22" name="days[]" value="dag22">
+<label for="dag22">22 Oktober</label><br><br>
 
-        <label>Välj vilken dag passar dig</label>
-        <input id='dag1' type="checkbox">
-        <label for="dag1"><b>Fredag 20/10</b></label>
-
-        <input id='dag2' type="checkbox">
-        <label for="dag2"><b>Lördag 21/10</b></label>
-
-        <input id='dag3' type="checkbox">
-        <label for="dag3"><b>Söndag 22/10</b></label>
-
-        <label for="email">E-post:</label>
+        <label for="email" class="label-block">E-post:</label>
         <input type="email" placeholder="Ange email" name="Email" id="Email" required>
 
-        <form action="#" action="/action_page.php" method="get">
-          <label for="Namn">Namn:</label>
-          <input type="text" id="Namn" Namn="Namn" required><br><br>
-          <label for="Adress">Adress:</label>
-          <input type="adress" id="Adress" Adress="Adress" required><br><br>
+        <label for="Namn" class="label-block">Namn:</label>
+        <input type="text" placeholder="Ange namn" id="Namn" name="Namn" required><br><br>
 
-          <br> Välj mat<br>
-          <input id='kött' type="radio" name='radio' >
-          <label for="kött"><b>Kött</b></label>
+        <label for="Adress" class="label-block">Adress:</label>
+        <input type="text" placeholder="Ange adress" id="Adress" name="Adress" required><br><br>
 
-          <input id='kyckling' type="radio" name='radio'">
-              <label for="kyckling"><b>Kyckling</b></label>
+        <br>Välj mat<br>
+        <input id='kött' type="radio" name='radio'>
+        <label for="kött"><b>Kött</b></label>
 
-          <input id='vegetarisk' type="radio" name='radio'>
-          <label for="vegetarisk"><b>Vegetarisk</b></label>
+        <input id='kyckling' type="radio" name='radio'>
+        <label for="kyckling"><b>Kyckling</b></label>
 
-          <label for="allergiker"><b>Om du är allergiker.</b></label>
-          <input type="text" id="allergiker" placeholder="Allergiker"><br><br>
+        <input id='vegetarisk' type="radio" name='radio'>
+        <label for="vegetarisk"><b>Vegetarisk</b></label>
+        <label for="allergier" class="label.block"></label>
 
-          <button type="submit"> Anmäl mig </button>
-          <button type="reset"> Avbryt </button>
-        </form>
+        <input type="text" id="allergier" placeholder="Allergier"><br><br>
+        <button type="submit">Anmäl mig</button>
+        <button type="reset">Avbryt</button>
+      </form>
     </div>
+  </div>
+</body>
 
-    <body />
+</html>

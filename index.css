@@ -1,21 +1,12 @@
+* {box-sizing: border-box}
 body {
     font-family: 'Montserrat', sans-serif;
 	
 }
 
-h1{
+.main-top-text
+{
     text-align: center;
-}
-
-h2{ 
-    text-align: center;
-}
-
-h3{
-	text-align: center;
-}
-p{
-	text-align: center;
 }
 
 .web > img{
@@ -42,7 +33,10 @@ p{
 	text-align: center;
 }
 .main-text{
-	padding: 3em;
+	border: 5px solid hotpink;
+	max-width: 40em;
+	
+	/* padding: 7em; */
 }
 a {
 	background-color: blanchedalmond;
@@ -50,27 +44,16 @@ a {
 	font-size: 15px;
 
 }
- 
-* {box-sizing: border-box}
-
 
 .container {
   padding: 16px;
 }
 
-
-input[type=text], input[type=Email] {
-  width: 50%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: 3px solid;
-  background: #f1f1f1;
-}
-
-input[type=text]:focus, input[type=Email]:focus {
-  background-color: #ddd;
-  outline: none;
+.container-anmälan form input {
+	background-color: #f2f2f2;
+	padding:20px;
+	border: 1px solid rgb(22, 20, 20);
+	border-radius: 3px;
 }
 
 
@@ -81,25 +64,25 @@ hr {
 
 
 .row {
-	display: -ms-flexbox; /* IE10 */
+	display: -ms-flexbox; 
 	display: flex;
-	-ms-flex-wrap: wrap; /* IE10 */
+	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
 	margin: 0 -16px;
   }
   
   .col-25 {
-	-ms-flex: 25%; /* IE10 */
+	-ms-flex: 25%; 
 	flex: 25%;
   }
   
   .col-50 {
-	-ms-flex: 50%; /* IE10 */
+	-ms-flex: 50%; 
 	flex: 50%;
   }
   
   .col-75 {
-	-ms-flex: 75%; /* IE10 */
+	-ms-flex: 75%; 
 	flex: 75%;
   }
   
@@ -109,24 +92,18 @@ hr {
 	padding: 0 16px;
   }
   
-  .container {
+  .container-anmälan {
 	background-color: #f2f2f2;
 	padding: 5px 20px 15px 20px;
 	border: 1px solid rgb(22, 20, 20);
 	border-radius: 3px;
+	margin-left: 30em;
   }
   
-  input[type=text] {
-	width: 50%;
-	margin-bottom: 20px;
-	padding: 12px;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-  }
-  
-  label {
+.label-block {
 	margin-bottom: 10px;
 	display: block;
+	font-size: large;
   }
   
   .icon-container {
@@ -171,3 +148,211 @@ h4{
 body {
     overflow-x: hidden;
 }
+
+.seminarier-container {
+  
+
+  display: flex;
+	flex-wrap: wrap;
+  }
+  
+  .seminarier-item {
+	width: 300px;
+	margin: 15px;
+	
+	
+  padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #f8f8f8;
+	
+	
+  box-sizing: border-box; 
+  }
+  
+  .seminarier-item h3 {
+	margin-bottom: 10px;
+  }
+  
+  .seminarier-item p {
+	margin-bottom: 0;
+  }
+  
+  
+  @media (max-width: 768px) {
+	
+   
+  .seminarier-item {
+	  
+	  
+  width: calc(50% - 30px); 
+	}
+  }
+  .main-text {
+    text-align: center;
+}
+.main-text {
+    
+  
+	text-align: center;
+		
+	  
+	margin: 0 auto;
+		
+		
+	max-width: 800px; 
+		line-height: 1.6;
+	}
+	
+	.main-text h2,
+	.main-text p {
+		margin-bottom: 10px; 
+	}
+	.conferance {
+		margin-top: 20px; 
+		margin-bottom: 20px; 
+		text-align: center; 
+		border: 2px solid black;
+		padding: 20px; 
+	}
+	
+	.conferance img {
+		display: block; 
+		margin: 0 auto 20px; 
+	}
+	
+	
+	
+	.main-text {
+		
+	
+	text-align: center;
+		margin: 0 auto;
+		max-width: 800px;
+		line-height: 1.6;
+	}
+	
+	.main-text h2,
+	.main-text p {
+		margin-bottom: 10px;
+	}
+	
+	body {
+		font-family: Arial, sans-serif;
+		
+		
+	margin: 0;
+		padding: 0;
+	}
+	
+	.container {
+		background-color: #f2f2f2;
+		
+		
+	overflow: hidden;
+	}
+	
+	.container a {
+		
+	 
+	float: left;
+		
+	 
+	display: block;
+		color: #666;
+		text-align: center;
+		padding: 14px 16px;
+		
+		
+	
+	}
+	
+	.container a:hover {
+		
+	
+	background-color: #ddd;
+		
+	  
+	color: black;
+	}
+	
+	.web img {
+		
+		
+	max-width: 100%;
+		height: auto;
+	}
+	
+	h1 {
+		
+		
+	text-align: center;
+	}
+	
+	.seminarier-container {
+		
+		
+	display: flex;
+		
+	   
+	flex-wrap: wrap;
+		
+	justify-content: space-around;
+	}
+	
+	.seminarier-item {
+		
+	 
+	width: 30%; 
+		
+	  
+	margin: 10px;
+		
+	 
+	padding: 15px;
+		border: 1px solid #ccc;
+		border-radius: 8px;
+		box-sizing: border-box;
+	}
+	
+	
+	@media (max-width: 600px) {
+		.seminarier-item {
+			width: 100%; 
+		}
+	}
+	.row {
+		display: flex;
+		
+		
+	justify-content: center;
+	}
+	
+	
+	
+	
+	
+	.container-anmälan {
+		width: 80%; 
+		max-width: 600px; 
+		margin: auto;
+		padding: 20px;
+		
+		
+	border: 1px solid #ccc;
+		border-radius: 8px;
+		
+		
+	box-sizing: border-box;
+	}
+	
+	
+	@media (max-width: 600px) {
+		.container-anmälan {
+			width: 90%; 
+		}
+	}
+	h2 {
+		text-align: center;
+		margin-bottom: 20px; 
+	}
